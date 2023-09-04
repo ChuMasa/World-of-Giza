@@ -77,8 +77,8 @@ Material:
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
-    - _RemapValue1: 0.0172634
-    - _RemapValue2: 0.0172634
+    - _RemapValue1: 0
+    - _RemapValue2: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _SrcBlend: 1
