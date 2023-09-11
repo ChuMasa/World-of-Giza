@@ -15,7 +15,7 @@ public class Anubis : MonoBehaviour
     // Start is called before the first frame update
     public PointOfInterest[] pointOfInterests;
 
-    public int pointOfInterest = 0;
+    public int pointOfInterest = -1;
     private int message = 0;
 
     public void SelectPointOfInterest(int index)
@@ -32,9 +32,14 @@ public class Anubis : MonoBehaviour
 
     public void NextMessage()
     {
+        if (pointOfInterest == -1) {
+            return;
+        }
+
         message = (message + 1) % (pointOfInterests[pointOfInterest].messages.Length + 1);
         if (message == 0) {
             GetComponent<UnityEngine.Rendering.HighDefinition.DecalProjector>().material = null;
+            pointOfInterest = -1;
         } else {
             GetComponent<UnityEngine.Rendering.HighDefinition.DecalProjector>().material = pointOfInterests[pointOfInterest].messages[message - 1];
         }
