@@ -43,6 +43,7 @@ public class raycast_bubble : MonoBehaviour
                 Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.yellow);
                 hit.collider.GetComponent<point_of_interest>().NextMaterial();
             } else if (hit.collider.gameObject.tag == "timeline") {
+                Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.yellow);
                 if(hit.collider.gameObject.name == "Collider1") {
                     // change timeline to 1
                 } else if(hit.collider.gameObject.name == "Collider2") {
@@ -51,10 +52,9 @@ public class raycast_bubble : MonoBehaviour
                     // change timeline to 3
                 }
             } else if (hit.collider.gameObject.tag == "anubis") {
+                Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.yellow);
                 anubis.GetComponent<Anubis>().NextMessage();
-            }
-            else
-            {
+            } else {
                 Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.red);
             }
         }
