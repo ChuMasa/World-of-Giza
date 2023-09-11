@@ -103,8 +103,8 @@ void Update()
         key1Pressed = false;
     }
 
-    // timeValue1 の値をコンソールウィンドウに出力する
-    Debug.Log("timeValue1: " + timeValue1);
+    /* timeValue1 の値をコンソールウィンドウに出力する
+    //Debug.Log("timeValue1: " + timeValue1);
 
     // _RemapValue1 の値を取得する
     float remapValue1 = shaderGraphMaterial.GetFloat("_RemapValue1");
@@ -119,7 +119,7 @@ void Update()
     float remapValue2 = shaderGraphMaterial.GetFloat("_RemapValue2");
 
     // コンソールに出力する
-    Debug.Log("RemapValue2: " + remapValue2);
+    Debug.Log("RemapValue2: " + remapValue2);*/
 }
 
 

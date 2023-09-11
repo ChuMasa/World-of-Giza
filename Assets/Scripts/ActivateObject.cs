@@ -9,15 +9,15 @@ public class ActivateObject : MonoBehaviour
     public GameObject targetObject;
 
     // Playable Director コンポーネントを参照する変数
-    private PlayableDirector director;
+    //private PlayableDirector director;
 
     // Start is called before the first frame update
     void Start()
     {
         // Playable Director コンポーネントを取得
-        director = GetComponent<PlayableDirector>();
+        //director = GetComponent<PlayableDirector>();
         // Update Method を Game Time に設定
-        director.timeUpdateMode = DirectorUpdateMode.GameTime;
+        //director.timeUpdateMode = DirectorUpdateMode.GameTime;
         // オブジェクトのアクティブ状態を非アクティブに設定
         targetObject.SetActive(false);
     }
@@ -31,11 +31,11 @@ public class ActivateObject : MonoBehaviour
             // オブジェクトのアクティブ状態を反転する
             targetObject.SetActive(!targetObject.activeSelf);
             // オブジェクトがアクティブになったら
-            if (targetObject.activeSelf)
+            /*if (targetObject.activeSelf)
             {
                 // タイムラインを再生する
                 director.Play();
-            }
+            }*/
         }
     }
 }
