@@ -4,21 +4,35 @@ using UnityEngine;
 
 public class raycast_bubble : MonoBehaviour
 {
-    public GameObject[] bubbles;
+    public GameObject calibrationCenter;
+    public GameObject trackerOffset;
 
     void Start()
     {
-        bubbles = GameObject.FindGameObjectsWithTag("bubble");
+        calibrationCenter = GameObject.Find("TrackerCalibration");
+        trackerOffset = GameObject.Find("TrackerOffset");
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        foreach (GameObject bubble in bubbles)
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            bubble.GetComponent<UnityEngine.Rendering.HighDefinition.DecalProjector>().enabled = false;
+            Raycast();
         }
+
+        // Calibration
+        if(Input.GetKeyDown(KeyCode.F1))
+        {
+            trackerOffset.transform.position = calibrationCenter.transform.position - transform.position;
+        }
+
+        
+    }
+
+    void Raycast()
+    {
 
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 20f))
         {
@@ -26,7 +40,15 @@ public class raycast_bubble : MonoBehaviour
             if (hit.collider.gameObject.tag == "bubble")
             {
                 Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.yellow);
-                hit.collider.gameObject.GetComponent<UnityEngine.Rendering.HighDefinition.DecalProjector>().enabled = true;
+                hit.collider.GetComponent<point_of_interest>().NextMaterial();
+            } else if (hit.collider.gameObject.tag == "timeline") {
+                if(hit.collider.gameObject.name == "Collider1") {
+                    // change timeline to 1
+                } else if(hit.collider.gameObject.name == "Collider2") {
+                    // change timeline to 2
+                } else if (hit.collider.gameObject.name == "Collider3") {
+                    // change timeline to 3
+                }
             }
             else
             {
