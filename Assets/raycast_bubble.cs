@@ -6,6 +6,7 @@ public class raycast_bubble : MonoBehaviour
 {
     public GameObject calibrationCenter;
     public GameObject trackerOffset;
+    public GameObject anubis;
 
     void Start()
     {
@@ -49,6 +50,8 @@ public class raycast_bubble : MonoBehaviour
                 } else if (hit.collider.gameObject.name == "Collider3") {
                     // change timeline to 3
                 }
+            } else if (hit.collider.gameObject.tag == "anubis") {
+                anubis.GetComponent<Anubis>().NextMessage();
             }
             else
             {

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - bubble
   - timeline
+  - anubis
   layers:
   - Default
   - TransparentFX

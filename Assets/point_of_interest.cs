@@ -4,26 +4,18 @@ using UnityEngine;
 
 public class point_of_interest : MonoBehaviour
 {
-    public Material[] materials;
-    private int index = 0;
+    public int index = 0;
+    public GameObject anubis;
 
 
     public void NextMaterial()
     {
-        index = (index + 1) % (materials.Length + 1);
-        if (index == 0) {
-            GetComponent<UnityEngine.Rendering.HighDefinition.DecalProjector>().enabled = false;
-        } else {
-            GetComponent<UnityEngine.Rendering.HighDefinition.DecalProjector>().enabled = true;
-            GetComponent<UnityEngine.Rendering.HighDefinition.DecalProjector>().material = materials[index + 1];
-        }
+        anubis.GetComponent<Anubis>().SelectPointOfInterest(index);
     }
 
     void Start()
     {
-        if (index == 0) {
-            GetComponent<UnityEngine.Rendering.HighDefinition.DecalProjector>().enabled = false;
-        }
+        
     }
 
     // Update is called once per frame
