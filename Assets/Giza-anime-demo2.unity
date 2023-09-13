@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2160.3733, g: 2264.051, b: 3286.6997, a: 1}
+  m_IndirectSpecularColor: {r: 2160.3577, g: 2264.051, b: 3286.559, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12750,15 +12750,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343315444}
-  m_LocalRotation: {x: 0.6229941, y: -0, z: -0, w: 0.78222656}
-  m_LocalPosition: {x: -0.27947432, y: 0.38184077, z: 0.044301316}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 908538776}
   m_Father: {fileID: 808704276}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 77.07, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &343315447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12781,14 +12781,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343315444}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a5fb0ca93b55ef4b8d54b512b103341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   poseAction:
     actionPath: /actions/default/in/Pose
-    needsReinit: 0
+    needsReinit: 1
   inputSource: 11
   origin: {fileID: 0}
   onTransformUpdated:
@@ -14386,7 +14386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808704275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.165, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14756,14 +14756,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062036683}
-  m_LocalRotation: {x: 0.12768693, y: 0.7038929, z: -0.13090125, w: 0.6863642}
-  m_LocalPosition: {x: -0.76662743, y: 0.26391464, z: -0.11771866}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1062036688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14776,6 +14776,11 @@ MonoBehaviour:
   m_Script: {fileID: 1207998753, guid: 2551dc133efea254f93fc5b635f7a90f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _configurationFile: C:\Users\IXLAB\Desktop\ProjectionSpace\group2\group2\export\config.xml
+  _camera: {fileID: 0}
+  _origin: {fileID: 0}
+  _layer: 8
+  _renderCorrectionData: 0
 --- !u!1 &1148124213
 GameObject:
   m_ObjectHideFlags: 0
@@ -26188,7 +26193,7 @@ PrefabInstance:
     - target: {fileID: 4973547473914195463, guid: c9b9ecd6f4278354cafdc9dc084637bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.0125
       objectReference: {fileID: 0}
     - target: {fileID: 4973547473914195463, guid: c9b9ecd6f4278354cafdc9dc084637bb,
         type: 3}
@@ -26239,6 +26244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: giza2-5-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642526268848223421, guid: c9b9ecd6f4278354cafdc9dc084637bb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
