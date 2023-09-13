@@ -29,13 +29,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6890712908230121692}
-  - {fileID: 308692086683455757}
+  - {fileID: 4308024893311596354}
   - {fileID: 7652928862776449722}
   - {fileID: 6186497233941220924}
   - {fileID: 8696312825168191832}
   - {fileID: 8276718740102099686}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &308692086683455756
 PrefabInstance:
@@ -130,7 +130,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59f2bd773a89436458e9bf190f4f38a5, type: 3}
---- !u!4 &308692086683455757 stripped
+--- !u!4 &4308024893311596354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4576110228568630862, guid: 59f2bd773a89436458e9bf190f4f38a5,
     type: 3}
@@ -521,7 +521,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boat
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5514733531603743890, guid: 59f2bd773a89436458e9bf190f4f38a5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

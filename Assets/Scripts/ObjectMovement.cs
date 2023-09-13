@@ -31,8 +31,8 @@ public class ObjectMovement : MonoBehaviour
     void Update()
     {
         // １キーが押されたら
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
+       // if (Input.GetKeyDown(KeyCode.Alpha1))
+       // {
             // 移動中でなければ
             if (!moving)
             {
@@ -40,8 +40,8 @@ public class ObjectMovement : MonoBehaviour
                 moving = true;
                 //flag = true;
             }
-        }
-/*       if(flag){
+       // }
+/*      if(flag){
         timeValue3 += Time.deltaTime;
         }
 */

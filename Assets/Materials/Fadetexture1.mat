@@ -94,7 +94,7 @@ Material:
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
     - _RemapValue: 15.254966
-    - _RemapValue1: 0
+    - _RemapValue1: 10
     - _RemapValue2: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0

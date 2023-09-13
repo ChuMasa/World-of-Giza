@@ -9,7 +9,7 @@ public class FadeIn2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canvasGroup = GetComponent<CanvasGroup>();
+    //    canvasGroup = GetComponent<CanvasGroup>();
         
     }
 
@@ -17,13 +17,20 @@ public class FadeIn2 : MonoBehaviour
     void Update()
     {
             // １キーが押されたら
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            StartCoroutine("Fade");
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //{
+        //    StartCoroutine("Fade");
 
-        }
+        //}
         
     }
+
+    void OnEnable()
+{
+    // Debug.Log("OnEnable");
+    canvasGroup = GetComponent<CanvasGroup>();
+    StartCoroutine("Fade");
+}
 
             // フェードアウトするコルーチン
     IEnumerator Fade()
